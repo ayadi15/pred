@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: fastapi-backend
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "./start.sh"
+    autoDeploy: true
+    branch: main
